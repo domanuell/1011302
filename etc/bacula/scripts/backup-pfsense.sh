@@ -16,7 +16,7 @@ PROTOCOL=http        # http or https
 ADDRESS=$1
 PORT=443
 URL=${PROTOCOL}://${ADDRESS}:${PORT}
-DESTINATION=/pfsense
+DESTINATION=/tmp/pfsense
 FILENAME=config-${ADDRESS}-`date +%Y%m%d%H%M%S`.xml
 
 if [ ! -d $DESTINATION ]
